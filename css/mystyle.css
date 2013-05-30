@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 15px;
+}
+
+.label {
+    font-size: 20px;
+    text-align: right;
+    
+}
+
+
+.submit:hover {
+    background-color: black;
+    color: white;
+}

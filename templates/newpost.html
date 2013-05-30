@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Timur's Blog</title>
+        <link rel="stylesheet" type="text/css" href="/css/mystyle_blog.css"/>
+    </head>
+
+    <body>
+        <h1><a href="/" style="color:black; text-decoration:none;">Timur's Blog</a></h1>
+	<h2>New Post</h2>
+
+        <form method="post">
+            <label>
+                <div>Subject</div>
+                <input type="text" name="subject" value="{{subject}}">
+            </label>
+
+            <label>
+            <div>Content</div>
+            <textarea name="content">{{content}}</textarea>
+            </label>
+         
+            <div class="error">{{error}}</div>
+
+            <input type="submit" class="button" value="Post">
+
+        </form>
+        <br>
+        <br>
+      
+
+    </body>
+</html>

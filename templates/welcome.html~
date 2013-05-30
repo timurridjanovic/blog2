@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>welcome</title>
+	<link rel="stylesheet" type="text/css" href="/css/mystyle_blog.css"/>
+    </head>
+
+    <body>
+    <h1><a href="/blog" style="text-decoration:none; color:black">Welcome {{user}}!</a></h1>
+    <div class="login-area">
+        <a class="login-link" a href="/logout">logout</a>
+        |
+        <a class="login-link" a href="/signup">signup</a>
+    </div>
+
+       
+    </body>
+</html>

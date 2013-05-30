@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>login</title>
+	<link rel="stylesheet" type="text/css" href="/css/mystyle.css"/>
+    </head>
+
+    <body>
+        
+        <form method="post">
+            <h1>Login</h1>
+            <table>
+                <tr>
+                    <td class = "label">
+                        Username 
+                        <input type="text" name="username" value="{{username}}"/>
+                    </td>
+                    <td class = "error">
+                        {{user_error}}
+                    </td>
+                </tr>
+                <tr>
+                    <td class = "label">
+                        Password 
+                        <input type="password" name="password" value=""/>
+                    </td>
+                    <td class = "error">
+                        {{password_error}}
+                    </td>
+                </tr>
+           
+            </table>
+            <input class="submit" type="submit" value="Submit">
+
+        </form>
+       
+       
+    </body>
+</html>

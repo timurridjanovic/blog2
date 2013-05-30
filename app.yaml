@@ -1,0 +1,22 @@
+application: udacity-homework6-blog-caching
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+
+- url: /blog/(\d+)
+  script: udacity-homework6-blog-caching.app
+
+- url: /.*
+  script: udacity-homework6-blog-caching.app
+
+libraries:
+- name: jinja2                                                                  
+  version: latest   
+
+builtins:
+- remote_api: on

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Timur's Blog</title>
+        <link rel="stylesheet" type="text/css" href="/css/mystyle_blog.css"/>
+    </head>
+
+    <body>
+        <h1><a href="/" style="color:black; text-decoration:none;">Timur's Blog</a></h1>
+        <div class="login-area">
+            <a class="login-link" a href="/logout">logout</a>
+            |
+            <a class="login-link" a href="/signup">signup</a>
+
+
+        </div>
+
+        <br>
+
+        {% for post in posts %}
+        <div class="post">
+            <a class="post-subject" a href="/{{post.key().id()}}">{{post.subject}}</a>
+            <div class="post-date">{{post.created.date()}}</div>
+	    <hr>
+            <pre class="post-content">{{post.content}}</pre>
+        </div>
+        {% endfor %}
+    
+        <br>
+        <br>
+        <form action="/newpost">
+            <input class ="button" type="submit" value="New Post">   
+        </form>
+        <br>
+
+        <form action="/.json">
+            <input class ="button" type="submit" value="To Json">   
+        </form>
+
+        <div class="query">queried {{query}} seconds ago</div>
+
+    </body>
+</html>
