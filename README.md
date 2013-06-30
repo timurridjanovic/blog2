@@ -4,4 +4,4 @@
 
 **Description**: Another blog with an authentication system, content output to JSON, DB with Google Datastore and caching with memcache for faster performance.
 
-**Demo**: http://udacity-wiki-timur.appspot.com/
+**Demo**: http://udacity-timur-test.appspot.com/
